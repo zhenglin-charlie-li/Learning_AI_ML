@@ -22,3 +22,6 @@ D[i,j] = D[i-1, j] + del_cost: this indicates you want to populate the current c
 D[i,j] = D[i, j-1] + ins_cost: this indicates you want to populate the current cell (i,j) by using the cost in the cell found directly to its left.
 
 D[i,j] = D[i-1, j-1] + rep_cost: the rep cost can be 2 or 0 depending if you are going to actually replace it or not.
+
+![image](https://user-images.githubusercontent.com/63448884/221516412-406443cd-cba8-45ba-9d05-17a184d148d6.png)
+
