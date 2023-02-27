@@ -1,44 +1,40 @@
-# Supervised ML & Sentiment Analysis
+# Part of Speech Tagging
 
-In supervised machine learning, you usually have an input
-�
-X, which goes into your prediction function to get your
-�
-^
-Y
-^
-. You can then compare your prediction with the true value
-�
-Y. This gives you your cost which you use to update the parameters
-�
-θ.
+Part of Speech Tagging (POS) is the process of assigning a part of speech to a word. 
 
-# Vocabulary & Feature Extraction
+![image](https://user-images.githubusercontent.com/63448884/221517175-af07758e-61a9-4bdd-a9c0-4855984447e1.png)
 
-# Feature Extraction with Frequencies
+# Markov Chains
 
-# Preprocessing
+You can use Markov chains to identify the probability of the next word. 
 
-1. Eliminate handles and URLs
+# Markov Chains and POS Tags
 
-1. Tokenize the string into words.
+![image](https://user-images.githubusercontent.com/63448884/221517411-d9f00bf2-79e2-4b28-a710-3410fda1d711.png)
 
-1. Remove stop words like "and, is, a, on, etc."
+# Hidden Markov Models
 
-1. Stemming- or convert every word to its stem. Like dancer, dancing, danced, becomes 'danc'. You can use porter stemmer to take care of this.
+![image](https://user-images.githubusercontent.com/63448884/221517485-d526bf20-0317-46e8-815d-63efa476cb66.png)
 
-1. Convert all your words to lower case.
+# Populating the Transition Matrix
 
-# Logistic Regression
+![image](https://user-images.githubusercontent.com/63448884/221517775-4525414c-603f-4a4f-935f-d38ea94780e1.png)
 
-Logistic regression makes use of the sigmoid function which outputs a probability between 0 and 1.
+"smooth" it as follows: 
 
-# Logistic Regression: Training
+![image](https://user-images.githubusercontent.com/63448884/221517816-cf1536c4-35e7-40c3-9215-24aad2c247d2.png)
 
-You initialize your parameter
-�
-θ, that you can use in your sigmoid, you then compute the gradient that you will use to update
-�
-θ, and then calculate the cost. You keep doing so until good enough.
+# Populating the Emission Matrix
 
-# Logistic Regression: Testing
+![image](https://user-images.githubusercontent.com/63448884/221517899-2effa180-b1db-4011-90e5-c2a0d4b7613b.png)
+
+# The Viterbi Algorithm
+
+The Viterbi algorithm makes use of the transition probabilities and the emission probabilities.
+
+![image](https://user-images.githubusercontent.com/63448884/221518150-db3dc15e-a36e-4915-a2f5-7393c733bb46.png)
+
+# Viterbi: Initialization
+# Viterbi: Forward Pass
+# Viterbi: Backward Pass
+
